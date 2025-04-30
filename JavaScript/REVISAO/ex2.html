@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informações sobre Dispositivos</title>
+    <script>
+        function mostrarInformacoes() {
+            let dispositivo = document.getElementById("dispositivo").value;
+            let informacao = "";
+
+            switch (dispositivo) {
+                case "fitaCassete":
+                    informacao = "A fita cassete é um dispositivo analógico que utiliza fita magnética para gravação e reprodução de áudio. Foi muito popular entre os anos 1960 e 1990, sendo amplamente utilizada para criar mixtapes e gravar músicas diretamente do rádio.";
+                    break;
+                case "dvd":
+                    informacao = "O DVD (Digital Versatile Disc) é um formato de disco óptico usado para armazenar vídeos, músicas e dados. Ele foi amplamente utilizado a partir dos anos 1990, substituindo as fitas VHS em qualidade de vídeo e áudio. Além disso, o DVD também permitiu o armazenamento de dados para computadores, sendo uma evolução significativa em relação aos CDs.";
+                    break;
+                case "cd":
+                    informacao = "O CD (Compact Disc) é um disco óptico usado para armazenar áudio e dados. Ele foi introduzido nos anos 1980 e rapidamente se tornou o principal meio de distribuição de música, substituindo os discos de vinil e as fitas cassete. Além disso, o CD também foi amplamente utilizado para armazenamento de dados em computadores, sendo uma tecnologia revolucionária em sua época.";
+                    break;
+                default:
+                    informacao = "Por favor, selecione um dispositivo válido.";
+            }
+
+            document.getElementById("informacoes").innerText = informacao;
+        }
+    </script>
+</head>
+<body>
+    <h1>Informações sobre Dispositivos</h1>
+    <label for="dispositivo">Escolha um dispositivo:</label>
+    <select id="dispositivo" onchange="mostrarInformacoes()">
+        <option value="">--Selecione--</option>
+        <option value="fitaCassete">Fita Cassete</option>
+        <option value="dvd">DVD</option>
+        <option value="cd">CD</option>
+    </select>
+    <p id="informacoes"></p>
+</body>
+</html>
