@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividde dos signos</Samp></title>
+</head>
+<body>
+    <h1>Descubra o seu signo</h1>
+
+    Digite seu mês entre 1 - 12: <input type="number" id="signo" min="1" max="12">
+    <button onclick="exibirsignos()">Ver Signos</button>
+    <p id="resultado"></p>
+
+    <script>
+        function exibirsignos() {
+            let mes = parseInt(document.getElementById("signo").value);
+            let resultado;
+
+            switch (mes) {
+                case 1:
+                    resultado = "Capricórnio ou Aquário";
+                    break;
+                case 2:
+                    resultado = "Aquário ou Peixes";
+                    break;
+                    case 3:
+                    resultado = "Peixes ou Áries";
+                    break;
+                case 4:
+                    resultado = "Áries ou Touro";
+                    break;
+                case 5:
+                    resultado = "Touro ou Gêmeos";
+                    break;
+                case 6:
+                    resultado = "Gêmeos ou Câncer";
+                    break;
+                case 7:
+                    resultado = "Câncer ou Leão";
+                    break;
+                case 8:
+                    resultado = "Leão ou Virgem";
+                    break;
+                case 9:
+                    resultado = "Virgem ou Libra";
+                    break;
+                case 10:
+                    resultado = "Libra ou Escorpião";
+                    break;
+                case 11:
+                    resultado = "Escorpião ou Sagitário";
+                    break;
+                case 12:
+                    resultado = "Sagitário ou Capricórnio";
+                    break;
+                default:
+                    resultado = "Mês inválido!";
+            }
+            document.getElementById("resultado").innerHTML = `o mês selecionado foi ${mes} e o signo é ${resultado} `;
+           
+        }
+        
+    </script>
+</body>
+</html>
