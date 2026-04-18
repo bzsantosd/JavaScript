@@ -1,6 +1,6 @@
 # JavaScript
 
-Este repositório é um material de consulta dos conceitos fundamentais de JavaScript. <br>
+Este repositório é um material de consulta dos conceitos fundamentais de JS. <br>
 Apresenta exercícios práticos, revisões de lógica e configurações de ambiente para aprimorar minhas habilidades em desenvolvimento web.
 
 ---
@@ -28,6 +28,6 @@ O repositório está organizado da seguinte forma:
 Para testar os exercícios da pasta de revisão:
 1. Navegue até a pasta `REVISAO`.
 2. Abra qualquer um dos arquivos `.html` (ex: `ex1.html`) em seu navegador de preferência.
-3. Utilize o **Console do Desenvolvedor** (F12) para visualizar os resultados dos scripts JavaScript.
+3. Utilize o **Console do Desenvolvedor** (F12) para visualizar os resultados dos scripts.
 
 ---
